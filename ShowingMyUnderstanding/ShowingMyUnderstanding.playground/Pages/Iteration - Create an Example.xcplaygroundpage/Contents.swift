@@ -20,7 +20,13 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 // Replace this comment and add your code below...
-
+canvas.drawShapesWithFill = false
+for x in stride(from: 0, through: 300, by: 20) {
+    canvas.drawEllipse(centreX: 150, centreY: 150, width: x, height: x)
+    canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: x, height: x)
+    canvas.drawRectangle(bottomLeftX: 300-x, bottomLeftY: 0, width: x, height: x)
+    canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 300-x, width: x, height: x)
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.

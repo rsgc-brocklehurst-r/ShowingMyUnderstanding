@@ -31,7 +31,6 @@ canvas.drawLine(fromX: 25, fromY: 25, toX: 275, toY: 25)
 canvas.lineColor = Color(hue: 310, saturation: 100, brightness: 100, alpha: 50)
 canvas.drawLine(fromX: 35, fromY: 20, toX: 265, toY: 280)
 
-
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.

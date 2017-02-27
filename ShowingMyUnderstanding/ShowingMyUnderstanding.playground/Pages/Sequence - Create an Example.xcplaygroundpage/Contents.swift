@@ -24,6 +24,13 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 // Replace this comment and add your code below...
+canvas.defaultLineWidth = 25
+canvas.lineColor = Color(hue: 130, saturation: 100, brightness: 100, alpha: 90)
+canvas.drawLine(fromX: 25, fromY: 275, toX: 275, toY: 275)
+canvas.drawLine(fromX: 25, fromY: 25, toX: 275, toY: 25)
+canvas.lineColor = Color(hue: 310, saturation: 100, brightness: 100, alpha: 50)
+canvas.drawLine(fromX: 35, fromY: 20, toX: 265, toY: 280)
+
 
 /*:
  ## Template code

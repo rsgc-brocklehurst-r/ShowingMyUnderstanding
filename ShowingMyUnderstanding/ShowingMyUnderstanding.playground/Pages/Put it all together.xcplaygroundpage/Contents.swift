@@ -23,19 +23,24 @@ let canvas = Canvas(width: 300, height: 300)
 
 // Replace this comment and add your code below...
 
-
+// if statement
 let z = random(from: 0, toButNotIncluding: 2)
 if z == 0 {
+    //sequence
     canvas.lineColor = Color(hue: 130, saturation: 100, brightness: 100, alpha: 90)
 }
 if z == 1 {
+    //sequence
     canvas.lineColor = Color(hue: 190, saturation: 100, brightness: 75, alpha: 90)
 }
+// loop
 for x in stride(from: 0, through: 100, by: 1) {
         canvas.drawLine(fromX: 0, fromY: 0, toX: 300, toY: x)
     
 }
+//sequence
 canvas.lineColor = Color(hue: 310, saturation: 100, brightness: 100, alpha: 60)
+//loop
 for y in stride(from: 0, through: 100, by: 1) {
     canvas.drawLine(fromX: 300, fromY: 0, toX: 0, toY: y)
 }
